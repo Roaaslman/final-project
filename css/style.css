@@ -1,0 +1,438 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    width: max-content;
+    height: 650px;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../assets/image/banner.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+header .hero {
+    height: calc(650px - 70px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+}
+
+header .hero h1 {
+    width:65.88%;
+    height: 45px; 
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+header .hero p {
+    text-align: center;
+}
+
+header .hero .link{
+    width: 190px;
+    height: 40px;
+    border: solid 1px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+header .hero a {
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+   
+}
+
+header nav {
+    width: 100vw;
+    height: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header nav .logo {
+    width: 80px;
+    height: 30px;
+}
+
+header nav .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+header nav ul {
+    width: 360px;
+    height: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    gap:6%;
+    list-style: none;
+
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bolder;
+    color: white;
+}
+
+#offer {
+    width: 100vw;
+    height:400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#offer .titel,
+#ABOUT .titel,
+#COURSE.titel,
+#BLOG .titel {
+    width: 350px;
+}
+
+#offer .titel h1,
+#ABOUT .titel h1,
+#COURSE .titel h1,
+#BLOG .titel h1 {
+    width: 290px;
+    margin-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+
+}
+
+#offer .titel p,
+#ABOUT .titel p,
+#COURSE .titel p,
+#BLOG .titel p{
+    color: #adabab;
+   text-align: center;
+
+}
+#COURSE .all .Facilities .paragraph p,#BLOG .feedback .right_inf p,
+footer p {
+    color: #adabab;
+}
+
+
+#offer .all {
+    width: 80%;
+    height: 190px;
+    display: flex;
+    gap: 5%;
+}
+
+#offer .courses-info {
+    width: 35%;
+    height: 190px;
+    background-color: #fff3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#offer .courses-info h2 { 
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: 20px;
+}
+
+#offer .courses-info p {
+    width: 80%;
+    color: #adabab;
+    text-align: center;
+}
+
+
+#ABOUT {
+    width: 100vw;
+    height: 600px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+#ABOUT .all{
+    width: 80%;
+    height: 380px;
+    display: flex;
+    gap: 3%;
+}
+
+
+#ABOUT .all .london,
+#ABOUT .all .newyork,
+#ABOUT .all .washington{
+    width: 230px;
+    width: 35%;
+    height:420px;
+    background-position: center;
+    background-size: cover;
+    border-radius:7px ;
+    font-size:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#ABOUT .all .london{
+    background-image: url(../assets/image/london.png);
+}
+#ABOUT .all .newyork{
+    background-image: url(../assets/image/newyork.png);
+}
+#ABOUT .all .washington{
+    background-image: url(../assets/image/washington.png);
+}
+
+   #ABOUT .all .london p,
+   #ABOUT .all .newyork p,
+   #ABOUT .all .washington p{
+        width: 100%;
+        height: 100%;
+        opacity: 0;   
+   }
+
+#ABOUT .all .Campus img,
+#COURSE .all .Facilities .image img,#BLOG .feedback .left_ph .photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+#COURSE {
+    width: 100vw;
+    height: 550px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#COURSE .titel{
+    width: 350px;
+    margin-top: 50px;
+}
+
+#COURSE .all {
+    width: 80%;
+    height: 400px;
+    display: flex;
+    gap: 3%;
+    padding-top: 4%;
+}
+
+#COURSE .all .Facilities  {
+    width: 230px;
+    width: 35%;
+    height: 400px;
+
+}
+#COURSE .all .Facilities .image {
+    width: 100%;
+    height:250px;
+}
+
+#COURSE .all .Facilities .paragraph  h2{
+    margin-top: 4%;
+    margin-bottom:4%;
+    font-size: 17px;
+    font-weight: bolder; 
+    font-family: 'Poppins', sans-serif;   
+}
+#BLOG{
+    width: 100vw;
+    height: 350px;
+    background-color:#eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+#BLOG .all{
+    width: 80%;
+    height:170px ;
+    display: flex; 
+    gap:15%;
+}
+
+#BLOG .all .feedback{
+    width:320px ;
+    width: 50%;
+    height:180px ;
+    display: flex;
+    background-color:#fff3f3 ;
+
+}
+#BLOG .all .feedback .left_ph{
+    width: 20%;
+    height:100px ;
+    margin-top: 4%;
+    display: flex;
+   justify-content: center;
+
+}
+#BLOG .all .feedback .left_ph .photo{
+    width:40px;
+    height: 40px;
+}
+#BLOG .all .feedback .left_ph .photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+#BLOG .all .feedback .right_inf{
+     height:120px ;
+     width: 80%;    
+     margin-top:4%;
+     display: flex;
+     flex-direction: column;
+      gap:6%;
+
+
+
+}
+#BLOG .all .feedback .right_inf span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+
+}
+#BLOG .all .feedback .right_inf .icon i {
+    color: red;
+}
+#CONTACT{
+    width: 100vw;
+    height:600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+#CONTACT .all{
+    width: 80%;
+    height: 450px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0,0,0,0.4)),url(../assets/image/banner2.jpg) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12%;
+    color: white;
+   
+}
+#CONTACT .all p{
+    font-family: 'Poppins', sans-serif;
+    width:550px;
+    height:52px ;
+    font-size: 30px;
+    line-height:39px;
+    text-align: center;
+}
+#CONTACT .all .link{
+    border: 1px white solid;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#CONTACT .all .link a{
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+}
+footer{
+    width:100vw ;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+}
+footer .foot{
+    width:80%;
+    height: 170px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12%;
+}
+
+footer h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+footer .foot p span{
+    margin-left: 20%;
+}
+
+
+footer .icon2{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    gap:15%;
+}
+footer p i,footer .icon2 a i{
+    color: red;
+}
+header nav ul li a:hover {
+    color: white;
+    border-bottom: 2px #f44336 solid;
+
+}
+header .hero .link:hover,
+#CONTACT .all .link:hover {
+     border: none;
+     background-color:#f44336;
+     color: white;
+}
+#ABOUT .all .london p:hover,
+#ABOUT .all .newyork p:hover,
+#ABOUT .all .washington p:hover{
+     opacity: 0.7;
+     color: white;
+     background-color:rgba(226,0,0,0.7) ;
+     border-radius:7px ;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
